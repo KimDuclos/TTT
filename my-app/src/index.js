@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
+
+
 class Square extends React.Component {
   render() {
     return (
@@ -14,7 +16,7 @@ class Square extends React.Component {
 
 class Board extends React.Component {
   renderSquare(i) {
-    return <Square />;
+    return <Square value={i} />;  // pass a prop called value to the square component
   }
 
   render() {
